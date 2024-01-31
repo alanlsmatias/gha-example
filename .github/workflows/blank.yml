@@ -31,4 +31,4 @@ jobs:
           python-version: 3.9
         
       - name: Run the python script
-        run: python main.py
+        run: python3 main.py
