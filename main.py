@@ -3,8 +3,8 @@ from datetime import datetime
 
 def args_parser():
     parser = argparse.ArgumentParser(prog='SquaredDifference')
-    parser.add_argument('-x', dest='x', type=int, default=1)
-    parser.add_argument('-y', dest='y', type=int, default=1)
+    parser.add_argument('-x', dest='x', type=float, default=1.)
+    parser.add_argument('-y', dest='y', type=float, default=1.)
     return parser
 
 def squared_diff(x: int, y: int):
