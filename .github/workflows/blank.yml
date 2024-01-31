@@ -2,6 +2,10 @@
 
 name: CI
 
+env:
+  x: 3.14
+  y: 1.77
+
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
@@ -31,4 +35,4 @@ jobs:
           python-version: 3.9
         
       - name: Run the python script
-        run: python3 main.py
+        run: python3 main.py -x ${{ env.x }} -y ${{ env.y }}
