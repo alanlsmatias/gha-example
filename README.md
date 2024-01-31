@@ -1,2 +1,2 @@
-# gha-example
+# github-actions-example
 GitHub Actions example
