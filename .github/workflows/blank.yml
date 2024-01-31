@@ -3,8 +3,7 @@
 name: CI
 
 env:
-  x: 3.14
-  y: 1.77
+  X: 3.14
 
 # Controls when the workflow will run
 on:
@@ -35,4 +34,4 @@ jobs:
           python-version: 3.9
         
       - name: Run the python script
-        run: python3 main.py -x ${{ env.x }} -y ${{ env.y }}
+        run: python3 main.py -x ${{ env.X }} -y ${{ secrets.Y }}
