@@ -1,5 +1,5 @@
 import argparse
-import datetime
+from datetime import datetime
 
 def args_parser():
     parser = argparse.ArgumentParser(prog='SquaredDifference')
